@@ -43,7 +43,7 @@ Interest can be applied to a **single account** or **all savings accounts** at o
 2. Open a C++ IDE (e.g., Code::Blocks, Visual Studio, Dev C++) or a terminal with g++ compiler.
 3. Compile the `BankManagementSystem.cpp` file:
 
-   ```bash
+```bash
    g++ -o BankManagementSystem BankManagementSystem.cpp
 ````
 
@@ -73,7 +73,4 @@ BankManagementSystem/
 
 ## Author
 
-**Harsh Raj**  
-
-Do you want me to do that next?
-```
+**Harsh Raj**
