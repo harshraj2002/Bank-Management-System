@@ -40,7 +40,7 @@ void BankAccount::openAccount() {
 
     // Ensure minimum balance
     if ((accType=='S' && balance<MIN_SAVINGS) || (accType=='C' && balance<MIN_CURRENT)) {
-        cout << "\n\t⚠️ Minimum balance required! Setting to minimum.\n";
+        cout << "\n\t Minimum balance required! Setting to minimum.\n";
         balance = (accType=='S') ? MIN_SAVINGS : MIN_CURRENT;
     }
     cout << "\n\tAccount Created Successfully!\n";
@@ -220,7 +220,7 @@ void depositOrWithdraw(int n,int option) {
             else if(option==2){ cout<<"\n\tEnter amount to withdraw: "; cin>>amt;
                 int remaining = acc.getBalance()-amt;
                 if((acc.getAccType()=='S' && remaining<MIN_SAVINGS) || (acc.getAccType()=='C' && remaining<MIN_CURRENT))
-                    cout<<"\n\t⚠️ Cannot withdraw! Minimum balance required.";
+                    cout<<"\n\t Cannot withdraw! Minimum balance required.";
                 else acc.withdrawMoney(amt);
             }
             int pos=(-1)*static_cast<int>(sizeof(BankAccount));
@@ -271,3 +271,4 @@ void applyInterestToAll() {
     if(found) cout<<"\n\tInterest applied to all savings accounts!";
     else cout<<"\n\tNo savings accounts found!";
 }
+
