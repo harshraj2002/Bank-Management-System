@@ -1,4 +1,4 @@
-# Bank Management System
+# Bank Management Syste
 
 A **console-based Bank Management System** implemented in C++ that allows users to manage bank accounts efficiently. This project demonstrates file handling, object-oriented programming, and basic banking operations.
 
